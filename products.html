@@ -23,25 +23,22 @@
     <h1>Our Products</h1>
     <p>Browse our categories below. Pre-orders are welcome through our <a href="contact.html">contact page</a>.</p>
 
-    <h2>Breads</h2>
-    <img src="bakery-bread.jpg" alt="Assorted North Star Bakery bread loaves arranged on a wooden shelf">
-    <p>Sourdough, whole wheat, rye, and seasonal specials. Price range: $5 – $10.</p>
+    <div id="product-filters" role="group" aria-label="Product category filters">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="breads">Breads</button>
+      <button class="filter-btn" data-category="pastries">Pastries</button>
+      <button class="filter-btn" data-category="cakes">Cakes</button>
+    </div>
 
-    <h2>Pastries</h2>
-    <p>Butter croissants, morning buns, danishes, and scones baked daily. Price range: $3 – $6.</p>
-
-    <h2>Cakes</h2>
-    <p>Custom layer cakes and celebration cakes made to order. Price range: $30 – $75.</p>
-
-    <h2>Signature Loaf</h2>
-    <figure>
-      <img src="bakery-signature-loaf.jpg" alt="North Star Bakery Signature Loaf with a golden crust">
-      <figcaption>Our Signature Loaf is made with organic flour and a slow overnight ferment.</figcaption>
-    </figure>
+    <div id="product-list">
+      <!-- Product cards will be inserted here by JavaScript -->
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 North Star Bakery. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
